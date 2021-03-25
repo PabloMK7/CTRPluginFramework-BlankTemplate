@@ -4,6 +4,8 @@
 
 #include <vector>
 
+extern "C" void _ZN18CTRPluginFramework10SearchMenu12ProcessEventERSt6vectorINS_5EventESaIS2_EERNS_4TimeE();
+
 namespace CTRPluginFramework
 {
     // This patch the NFC disabling the touchscreen when scanning an amiibo, which prevents ctrpf to be used
@@ -57,6 +59,9 @@ exit:
     // Useful to do code edits safely
     void    PatchProcess(FwkSettings &settings)
     {
+			*(u32*)((u32)(_ZN18CTRPluginFramework10SearchMenu12ProcessEventERSt6vectorINS_5EventESaIS2_EERNS_4TimeE)
+			+ 0xB4) = 0xE1A00000;
+			
         ToggleTouchscreenForceOn();
     }
 
