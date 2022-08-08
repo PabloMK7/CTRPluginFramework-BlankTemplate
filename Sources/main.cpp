@@ -88,7 +88,7 @@ exit:
         PluginMenu *menu = new PluginMenu("Action Replay", 0, 7, 1,
                                             "A blank template plugin.\nGives you access to the ActionReplay and others tools.");
 
-        // Synnchronize the menu with frame event
+        // Synchronize the menu with frame event
         menu->SynchronizeWithFrame(true);
 
         // Init our menu entries & folders
