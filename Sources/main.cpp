@@ -61,7 +61,7 @@ exit:
     }
 
     // This function is called when the process exits
-    // Useful to save settings, undo patchs or clean up things
+    // Useful to save settings, undo patches or clean up things
     void    OnProcessExit(void)
     {
         ToggleTouchscreenForceOn();
