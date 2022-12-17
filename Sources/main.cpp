@@ -85,7 +85,7 @@ exit:
 
     int     main(void)
     {
-        PluginMenu *menu = new PluginMenu("Action Replay", 0, 7, 1,
+        PluginMenu *menu = new PluginMenu("Action Replay", 0, 7, 4,
                                             "A blank template plugin.\nGives you access to the ActionReplay and others tools.");
 
         // Synchronize the menu with frame event
