@@ -61,7 +61,7 @@ exit:
     }
 
     // This function is called when the process exits
-    // Useful to save settings, undo patchs or clean up things
+    // Useful to save settings, undo patches or clean up things
     void    OnProcessExit(void)
     {
         ToggleTouchscreenForceOn();
@@ -88,7 +88,7 @@ exit:
         PluginMenu *menu = new PluginMenu("Action Replay", 0, 7, 4,
                                             "A blank template plugin.\nGives you access to the ActionReplay and others tools.");
 
-        // Synnchronize the menu with frame event
+        // Synchronize the menu with frame event
         menu->SynchronizeWithFrame(true);
 
         // Init our menu entries & folders
